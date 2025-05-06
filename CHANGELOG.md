@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.6](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.5...v0.8.6) (2025-05-06)
+
+
+### Bug Fixes
+
+* **deps:** Update Go modules ([#132](https://github.com/mikesmitty/mdns-mesh/issues/132)) ([a6bc936](https://github.com/mikesmitty/mdns-mesh/commit/a6bc936654ea3e3080a65f88fd22b8acc6ca08bb))
+
 ## [0.8.5](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.4...v0.8.5) (2025-04-13)
 
 
