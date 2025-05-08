@@ -5,7 +5,7 @@ go 1.24.3
 require (
 	github.com/denisbrodbeck/machineid v1.0.1
 	github.com/eclipse/paho.mqtt.golang v1.5.0
-	github.com/miekg/dns v1.1.65
+	github.com/miekg/dns v1.1.66
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/pflag v1.0.6
 	github.com/spf13/viper v1.20.1
@@ -25,9 +25,9 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
-	golang.org/x/mod v0.23.0 // indirect
+	golang.org/x/mod v0.24.0 // indirect
 	golang.org/x/sync v0.14.0 // indirect
 	golang.org/x/text v0.25.0 // indirect
-	golang.org/x/tools v0.30.0 // indirect
+	golang.org/x/tools v0.32.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
