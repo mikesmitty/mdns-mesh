@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.8](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.7...v0.8.8) (2025-05-31)
+
+
+### Bug Fixes
+
+* **deps:** Update alpine Docker tag to v3.22 ([#137](https://github.com/mikesmitty/mdns-mesh/issues/137)) ([30eaa99](https://github.com/mikesmitty/mdns-mesh/commit/30eaa99ddfa093586527c256e9cade9e94c6edab))
+
 ## [0.8.7](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.6...v0.8.7) (2025-05-08)
 
 
