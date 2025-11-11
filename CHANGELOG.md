@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.18](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.17...v0.8.18) (2025-11-08)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency go to v1.25.4 ([#164](https://github.com/mikesmitty/mdns-mesh/issues/164)) ([5c81816](https://github.com/mikesmitty/mdns-mesh/commit/5c81816606eef4d83dcf1f1f9462a9afbc33b0eb))
+* **deps:** Update module golang.org/x/sys to v0.38.0 ([#166](https://github.com/mikesmitty/mdns-mesh/issues/166)) ([4ec5cc8](https://github.com/mikesmitty/mdns-mesh/commit/4ec5cc861a1312b02f280e0d4e59159eed3ad8e5))
+
 ## [0.8.17](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.16...v0.8.17) (2025-10-18)
 
 
