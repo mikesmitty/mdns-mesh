@@ -6,7 +6,7 @@ RUN go get -d -v ./...
 RUN go install -a -v -trimpath -tags netgo -ldflags '-extldflags "-static"' ./...
 
 
-FROM alpine:3.22
+FROM alpine:3.23
 
 RUN apk --no-cache add ca-certificates
 WORKDIR /app
