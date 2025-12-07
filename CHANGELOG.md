@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.0](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.19...v0.9.0) (2025-12-07)
+
+
+### Features
+
+* add resubscription logic on disconnect ([7b51428](https://github.com/mikesmitty/mdns-mesh/commit/7b514285860a916544d57241279f9143320d1009))
+
+
+### Bug Fixes
+
+* **deps:** Update alpine Docker tag to v3.23 ([#169](https://github.com/mikesmitty/mdns-mesh/issues/169)) ([a6613d3](https://github.com/mikesmitty/mdns-mesh/commit/a6613d39a36125b3b7f4b90f438a1dfcc7dffd4a))
+
 ## [0.8.19](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.18...v0.8.19) (2025-11-15)
 
 
