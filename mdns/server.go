@@ -112,13 +112,11 @@ func StartServer(config Config) error {
 		uniqueID:    uniqueID,
 	}
 
-	c, err := connect(uniqueID, config.Server)
+	c, err := s.connect(uniqueID, config.Server)
 	if err != nil {
 		return err
 	}
 	s.client = c
-
-	s.client.Subscribe(config.Topic, 0, s.send)
 
 	if ipv4Low != nil {
 		s.wg.Add(1)
@@ -133,6 +131,20 @@ func StartServer(config Config) error {
 	s.wg.Wait()
 
 	return nil
+}
+
+func (s *Server) onConnect(c mqtt.Client) {
+	log.Info("Connected to MQTT server")
+	token := c.Subscribe(s.config.Topic, 0, s.send)
+	if token.Wait() && token.Error() != nil {
+		log.Errorf("Error subscribing to topic %s: %v", s.config.Topic, token.Error())
+	} else {
+		log.Infof("Subscribed to topic: %s", s.config.Topic)
+	}
+}
+
+func (s *Server) onConnectionLost(c mqtt.Client, err error) {
+	log.Warnf("Connection to MQTT server lost: %v", err)
 }
 
 // Check filters to deny messages in from/out to the wire
@@ -245,8 +257,8 @@ func (s *Server) send(client mqtt.Client, msg mqtt.Message) {
 	log.Tracef("Rebroadcast message to wire: %+v", msg)
 }
 
-func connect(clientId string, uri *url.URL) (mqtt.Client, error) {
-	opts := createClientOptions(clientId, uri)
+func (s *Server) connect(clientId string, uri *url.URL) (mqtt.Client, error) {
+	opts := createClientOptions(clientId, uri, s.onConnect, s.onConnectionLost)
 	client := mqtt.NewClient(opts)
 	token := client.Connect()
 	for !token.WaitTimeout(3 * time.Second) {
@@ -257,13 +269,15 @@ func connect(clientId string, uri *url.URL) (mqtt.Client, error) {
 	return client, nil
 }
 
-func createClientOptions(clientId string, uri *url.URL) *mqtt.ClientOptions {
+func createClientOptions(clientId string, uri *url.URL, onConnect mqtt.OnConnectHandler, onConnectionLost mqtt.ConnectionLostHandler) *mqtt.ClientOptions {
 	opts := mqtt.NewClientOptions()
 	opts.AddBroker(fmt.Sprintf("tcp://%s", uri.Host))
 	opts.SetUsername(uri.User.Username())
 	password, _ := uri.User.Password()
 	opts.SetPassword(password)
 	opts.SetClientID(clientId)
+	opts.SetOnConnectHandler(onConnect)
+	opts.SetConnectionLostHandler(onConnectionLost)
 	return opts
 }
 
