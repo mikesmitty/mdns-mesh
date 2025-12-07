@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.1](https://github.com/mikesmitty/mdns-mesh/compare/v0.9.0...v0.9.1) (2025-12-07)
+
+
+### Bug Fixes
+
+* add some extra logging ([361f06b](https://github.com/mikesmitty/mdns-mesh/commit/361f06bb93803498d10e0422cc4af31d66419ac9))
+* handle potential panics ([e0d4f3f](https://github.com/mikesmitty/mdns-mesh/commit/e0d4f3fcc9ec91e02b90a09c5bc9189d9491ba2f))
+
 ## [0.9.0](https://github.com/mikesmitty/mdns-mesh/compare/v0.8.19...v0.9.0) (2025-12-07)
 
 
