@@ -128,18 +128,20 @@ func StartServer(config Config) error {
 		go s.receive(ipv4High)
 	}
 
+	log.Warn("Starting receive loops")
 	s.wg.Wait()
+	log.Warn("Receive loops finished, server exiting")
 
 	return nil
 }
 
 func (s *Server) onConnect(c mqtt.Client) {
-	log.Info("Connected to MQTT server")
+	log.Warn("Connected to MQTT server")
 	token := c.Subscribe(s.config.Topic, 0, s.send)
 	if token.Wait() && token.Error() != nil {
 		log.Errorf("Error subscribing to topic %s: %v", s.config.Topic, token.Error())
 	} else {
-		log.Infof("Subscribed to topic: %s", s.config.Topic)
+		log.Warnf("Subscribed to topic: %s", s.config.Topic)
 	}
 }
 
@@ -164,7 +166,14 @@ func (s *Server) discardMessage(msg dns.Msg) bool {
 
 // Start loop to pull multicast broadcasts off the wire and send them to MQTT
 func (s *Server) receive(p *ipv4.PacketConn) {
+	log.Info("Receive loop started")
 	defer s.wg.Done()
+	defer func() {
+		if r := recover(); r != nil {
+			log.Errorf("PANIC in receive loop: %v", r)
+		}
+		log.Info("Receive loop exiting")
+	}()
 
 	for {
 		b := make([]byte, bufSize)
