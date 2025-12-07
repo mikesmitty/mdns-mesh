@@ -52,6 +52,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error starting listener: %v", err)
 	}
+	log.Fatal("Exiting main (this should not happen)")
 }
 
 func init() {
