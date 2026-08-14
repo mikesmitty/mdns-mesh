@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.9.3](https://github.com/mikesmitty/mdns-mesh/compare/v0.9.2...v0.9.3) (2026-08-14)
+
+
+### Bug Fixes
+
+* **deps:** Update alpine Docker tag to v3.24 ([#191](https://github.com/mikesmitty/mdns-mesh/issues/191)) ([cc3406a](https://github.com/mikesmitty/mdns-mesh/commit/cc3406ab283fb3243a5a899163d7806e05e86d42))
+* **deps:** Update Go modules to v0.46.0 ([#190](https://github.com/mikesmitty/mdns-mesh/issues/190)) ([f977025](https://github.com/mikesmitty/mdns-mesh/commit/f977025be19f8e92f61c1fd93359111ad37dc471))
+* **deps:** Update Go modules to v0.56.0 ([#192](https://github.com/mikesmitty/mdns-mesh/issues/192)) ([878e282](https://github.com/mikesmitty/mdns-mesh/commit/878e282bb8d94e55855d59b22ff98219978f7dc3))
+* **deps:** Update module golang.org/x/net to v0.54.0 ([#187](https://github.com/mikesmitty/mdns-mesh/issues/187)) ([4551bde](https://github.com/mikesmitty/mdns-mesh/commit/4551bde6e2db61db20f5e04d5361daebf5ed01ff))
+* **deps:** Update module golang.org/x/net to v0.55.0 ([#189](https://github.com/mikesmitty/mdns-mesh/issues/189)) ([105ff02](https://github.com/mikesmitty/mdns-mesh/commit/105ff02bdf8743bc4345f30352d0dd8af85a3430))
+* **deps:** Update module golang.org/x/net to v0.57.0 ([#194](https://github.com/mikesmitty/mdns-mesh/issues/194)) ([ca93e68](https://github.com/mikesmitty/mdns-mesh/commit/ca93e68540ff46ef6a57818dff40286a70a4c406))
+* **deps:** Update module golang.org/x/net to v0.58.0 ([#195](https://github.com/mikesmitty/mdns-mesh/issues/195)) ([77076f3](https://github.com/mikesmitty/mdns-mesh/commit/77076f372499e380588d328a8f12c11905dc2cab))
+* **deps:** Update module golang.org/x/sys to v0.44.0 ([#185](https://github.com/mikesmitty/mdns-mesh/issues/185)) ([12c44b8](https://github.com/mikesmitty/mdns-mesh/commit/12c44b858e342ac9fbb8399217a3f6ae7e08a968))
+* **deps:** Update module golang.org/x/sys to v0.45.0 ([#188](https://github.com/mikesmitty/mdns-mesh/issues/188)) ([2d86e6f](https://github.com/mikesmitty/mdns-mesh/commit/2d86e6f0418828a8518a34b8294a52b83c063d10))
+* **deps:** Update module golang.org/x/sys to v0.47.0 ([#193](https://github.com/mikesmitty/mdns-mesh/issues/193)) ([ad571ed](https://github.com/mikesmitty/mdns-mesh/commit/ad571ed99b4b911f831c23318b922bd7e32c2068))
+
 ## [0.9.2](https://github.com/mikesmitty/mdns-mesh/compare/v0.9.1...v0.9.2) (2026-04-30)
 
 
