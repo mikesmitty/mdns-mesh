@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.9.4](https://github.com/mikesmitty/mdns-mesh/compare/v0.9.3...v0.9.4) (2026-09-10)
+
+
+### Bug Fixes
+
+* **deps:** Update Go modules ([#198](https://github.com/mikesmitty/mdns-mesh/issues/198)) ([959379e](https://github.com/mikesmitty/mdns-mesh/commit/959379ea6caa92ceda4d9c2f71ddc4af9a47bd2e))
+* **deps:** Update module github.com/sirupsen/logrus to v1.10.0 ([#196](https://github.com/mikesmitty/mdns-mesh/issues/196)) ([01efe4a](https://github.com/mikesmitty/mdns-mesh/commit/01efe4abcc1ca228552f7650792a61b9b9855873))
+* **deps:** Update module github.com/sirupsen/logrus to v1.10.2 ([#199](https://github.com/mikesmitty/mdns-mesh/issues/199)) ([f2dae44](https://github.com/mikesmitty/mdns-mesh/commit/f2dae448947aca93c8a7ebb6dec71a84967f5e6d))
+* **deps:** Update module golang.org/x/net to v0.59.0 ([#201](https://github.com/mikesmitty/mdns-mesh/issues/201)) ([ea23db7](https://github.com/mikesmitty/mdns-mesh/commit/ea23db79b10d79194ae1fae8932232ffa0603b4b))
+* **deps:** Update module golang.org/x/sys to v0.48.0 ([#200](https://github.com/mikesmitty/mdns-mesh/issues/200)) ([ceded70](https://github.com/mikesmitty/mdns-mesh/commit/ceded709a5aaaf206ce12f5a062a14acb14eae35))
+
 ## [0.9.3](https://github.com/mikesmitty/mdns-mesh/compare/v0.9.2...v0.9.3) (2026-08-14)
 
 
