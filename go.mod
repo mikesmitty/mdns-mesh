@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/denisbrodbeck/machineid v1.0.1
-	github.com/eclipse/paho.mqtt.golang v1.5.1
+	github.com/eclipse/paho.mqtt.golang v1.5.2
 	github.com/miekg/dns v1.1.73
 	github.com/sirupsen/logrus v1.10.2
 	github.com/spf13/pflag v1.1.0
